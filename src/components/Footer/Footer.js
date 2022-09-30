@@ -90,13 +90,13 @@ const Footer = () => {
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                info@natacionygimnasia.com.ar
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 54 381 xxxxx
+                <MDBIcon icon="phone" className="me-3" /> + 54 381 3031765
               </p>
               <p>
-                <MDBIcon fab icon="whatsapp" className="me-3" /> + 54 381 xxxxx
+                <MDBIcon fab icon="whatsapp" className="me-3" /> + 54 381 3031765
               </p>
             </MDBCol>
           </MDBRow>
@@ -104,9 +104,9 @@ const Footer = () => {
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2022 Copyright:
-        <a className='text-reset fw-bold' href='https://onyxs.com/'>
-          Onyxs
+        © 2022 Copyright: 
+        <a className='text-reset fw-bold' href='https://onyxs.com.ar/ '>
+           Onyxs
         </a>
       </div>
     </MDBFooter>

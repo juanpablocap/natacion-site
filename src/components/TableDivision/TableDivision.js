@@ -1,9 +1,19 @@
+import { useState } from 'react'
 import Table from 'react-bootstrap/Table';
 import { Button } from 'react-bootstrap';
+import AddModal from '../AddModal/AddModal';
 
 const TableDivision = () => {
-    const handledelete = () =>{
 
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+    const handledelete = () =>{
+      return (
+        alert('Esta seguro que desea borrar: user ?')
+      )
     }
     return ( 
         <>
@@ -56,7 +66,8 @@ const TableDivision = () => {
           <td>3</td>
           <td colSpan={2}>Larry the Bird</td>
           <td>@twitter</td>
-          <td><Button variant="success" size="sm">Editar</Button>
+          <AddModal show={show} handleClose={handleClose} />
+          <td><Button onClick={handleShow} variant="success" size="sm">Editar</Button>
           <Button  onClick={handledelete}variant="danger" size="sm">Borrar</Button></td>
         </tr>
       </tbody>

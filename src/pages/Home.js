@@ -10,6 +10,7 @@ const Home = () => {
         <Header />
         <Carusel />
         <NewsBoard />
+        
         <Footer />
         </>
      );
