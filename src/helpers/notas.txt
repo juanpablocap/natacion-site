@@ -1,0 +1,19 @@
+Aqui una pequeña documentacion de lo que se esta trabajando.
+1 se creo carpera natacion-site en desktop
+2 en terminal se ejecuto npx create-react-app natacion-app
+3 se crearon las carperas nuevas en src
+4 se intalan librerias que se van a usar: 
+
+    npm install react-router-dom axios
+    npm install react-bootstrap bootstrap
+    npm install json-server
+se creo un db.json en src/db/ con los datos de un usuario de ejemplo para trabajar en el login
+ en otra terminal se corre el servidor json-server en el puerto 3500 asi:
+    json-server --watch src/db/db.json --port 3500 (difrente a react)
+
+
+con router-dom hicimos las rutas privadas(las demas) y publicas (landing, login. contacto, news)
+
+login, cargamos un user en localstorage para chequear el logeo, en el futuro ira un token de auth.
+
+Se instalo "mdb-react-ui-kit": "^4.2.0"  "mdbreact": "^5.2.0", para usar en el footer con iconos
