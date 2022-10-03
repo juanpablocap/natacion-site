@@ -17,3 +17,6 @@ con router-dom hicimos las rutas privadas(las demas) y publicas (landing, login.
 login, cargamos un user en localstorage para chequear el logeo, en el futuro ira un token de auth.
 
 Se instalo "mdb-react-ui-kit": "^4.2.0"  "mdbreact": "^5.2.0", para usar en el footer con iconos
+
+se instalo react-iframe, para manejar los iframe que necesita el api de google maps en contacto page
+

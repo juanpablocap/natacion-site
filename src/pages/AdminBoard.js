@@ -13,4 +13,4 @@ const AdminBoard = () => {
      );
 }
  
-export default AdminBoard;
+export default AdminBoard; 
