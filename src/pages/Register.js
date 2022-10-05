@@ -6,7 +6,9 @@ const Register = () => {
     return (
         <>
         <Header />
+        <br/><br/>
         <RegisterForm />
+        <br/>
         <Footer />
         </>
       );

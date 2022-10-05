@@ -1,0 +1,6 @@
+Se instalo
+
+nodemon 
+dotenv
+axios
+mongoose

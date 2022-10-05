@@ -21,12 +21,12 @@ const LoginForm = () => {
     });
   };
   const navigate = useNavigate();
-  // es un hook asi que se usa en una constante
 
   const checkData = async () => {
     const response = await axiosClient.get("http://localhost:3500/users");
     const { data } = response;
     const userFound = data.find((user) => user.email === values.email);
+    console.log(userFound);
     if (userFound) {
       if (userFound.password === values.password) {
         localStorage.setItem("user", JSON.stringify(userFound));
@@ -50,11 +50,11 @@ const LoginForm = () => {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
+        <Form.Label>Email</Form.Label>
         <Form.Control
           onKeyUp={(e) => handleKeyUp(e)}
           type="email"
-          placeholder="Enter email"
+          placeholder="Ingresa tu email"
           name="email"
         />
         <Form.Text className="text-muted">
@@ -63,11 +63,11 @@ const LoginForm = () => {
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
+        <Form.Label>Contraseña</Form.Label>
         <Form.Control
           onKeyUp={(e) => handleKeyUp(e)}
           type="password"
-          placeholder="Password"
+          placeholder="Ingresa tu contraseña"
           name="password"
         />
       </Form.Group>
@@ -76,7 +76,7 @@ const LoginForm = () => {
       </Button>
       <br />
       <Form.Text className="text-muted">
-        <Link to="/registro">Registro</Link>
+        <Link to="/registro">Registrate!</Link>
         
       </Form.Text>
     </Form>

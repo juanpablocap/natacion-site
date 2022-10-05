@@ -12,6 +12,7 @@ const Login = () => {
         <div className="d-flex justify-content-center">
             <LoginForm /> 
         </div>
+        <br/>
         <Footer />
         </>
         

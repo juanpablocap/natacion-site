@@ -1,11 +1,18 @@
-const http = require('http')
+const express = require('express')
+const app = express();
+const users = require('./routes/users')
+const { connectDB } = require('./db/db'); //db.js file to mongo connect
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('content-type', 'text/html');
-    res.end('<h2>Respuesta desdel Back-End -> Hola Mundo</h2>')
-})
 
-server.listen(3600, () => {
-    console.log("El servidor esta escuchando el puerto 3600")
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+require('dotenv').config();
+connectDB();
+
+app.use('/users', users);
+
+
+//servidor
+app.listen(5000, ()=> {
+    console.log("Update ok! - Server Backend port 5000" + process.env.PORT);
 })

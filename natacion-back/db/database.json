@@ -1,0 +1,13 @@
+{
+    "user":[
+        {"name": "Juan Pablo"},
+        {"name": "Carlos"},
+        {"name":"Jose "},
+        {"name":"Diego"}
+    ],
+    "products":[
+        {"name":"Cuota"},
+        {"name":"Coca"},
+        {"name":"Agua"}
+    ]
+}

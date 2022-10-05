@@ -8,6 +8,7 @@ const Home = () => {
     return ( 
         <>
         <Header />
+        <br/>
         <Carusel />
         <NewsBoard />
         

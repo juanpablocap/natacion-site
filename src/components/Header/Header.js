@@ -24,7 +24,7 @@ const Header = () => {
   const logOut = () => {
     localStorage.clear();
     setUser(null)
-    navigate('/landing')
+    navigate('/home')
     window.reload()
     console.log("El usuario:", user.email, "cerro sesion...")
     

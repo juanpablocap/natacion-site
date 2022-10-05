@@ -5,6 +5,7 @@ const Landing = () => {
     return ( 
         <>
         <Header />
+        <br/><br/>
         <p>Page Componente Landing</p>
         <Footer />
         </>
