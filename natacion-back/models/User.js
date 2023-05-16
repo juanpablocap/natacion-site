@@ -35,8 +35,8 @@ const UserSchema = new Schema({
         enum:['enero', 'febrero'], //solo ejemplo
     }
 },{
-    versionKey:false, //eliminamos el _V 
-    timestamps:true  // cargamos el tiempo que se creo
+    versionKey:false, //eliminamos el _V  version
+    timestamps:true  // cargamos el tiempo que se creo y actualizo
 })
 
 module.exports = model('User', UserSchema);

@@ -80,6 +80,7 @@ const TableDivision = () => {
         <tr>
           <td>3</td>
           <td >Larry the Bird</td>
+          <td>other</td>
           <td>@twitter</td>
           <AddModal show={show} handleClose={handleClose} />
           <td><Button onClick={handleShow} variant="success" size="sm">Editar</Button>

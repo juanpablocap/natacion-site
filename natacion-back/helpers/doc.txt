@@ -1,6 +1,13 @@
 Se instalo
-
+express
+    npm i express
 nodemon 
+    npx nodemon 
+
+
 dotenv
+    habilita a usar variables de entorno en toda la app
 axios
 mongoose
+
+se inicia con node index.js o npm run server como se indico en el packge.json

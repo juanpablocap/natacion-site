@@ -14,6 +14,7 @@ import Error from "./pages/Error";
 import AdminBoard from "./pages/AdminBoard";
 import AdminRoute from "./routes/AminRoute";
 import ContactPage from "./pages/Contact";
+import Layout from "./pages/Layout";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         <Route path="/" element={<PublicRoute><Landing /></PublicRoute>} />
         <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
         <Route path="/news" element={<News />} /> 
-        <Route path="/landing" element={<PublicRoute><Landing /></PublicRoute>} />
+        <Route path="/layout" element={<PublicRoute><Layout /></PublicRoute>} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/Registro" element={<PublicRoute><Register /></PublicRoute>} />
         <Route path="/home" element={<Home />} />

@@ -9,7 +9,7 @@ import { UserContext } from "../../context/UserContext";
 const LoginForm = () => {
   const [values, setValues] = useState({
     email: "",
-    password: ""
+    password: ""  //deberia ir un hash, no la contraseña pura
   });
 
   const {setUser} = useContext(UserContext) // solo traemos el seteador, el user no lo usamos por ahora
