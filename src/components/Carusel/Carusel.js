@@ -21,7 +21,7 @@ const Carusel = () => {
         />
         <Carousel.Caption>
           <h3>La primera de Hockey Campeonas!</h3>
-          <p>La primera division de los "blancos" ganaron la final contra Universitario del torneo clausura 2022</p>
+          <p>Los "blancos" ganaron la final contra Universitario del torneo clausura 2022</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
